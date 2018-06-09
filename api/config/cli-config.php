@@ -1,5 +1,5 @@
 <?php
-
+// cli-config.php
 use Doctrine\ORM\Tools\Console\ConsoleRunner;
 
 require 'vendor/autoload.php';
@@ -18,4 +18,3 @@ $config = \Doctrine\ORM\Tools\Setup::createAnnotationMetadataConfiguration(
 $em = \Doctrine\ORM\EntityManager::create($settings['connection'], $config);
 
 return ConsoleRunner::createHelperSet($em);
-

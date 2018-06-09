@@ -9,10 +9,10 @@ export class DataService {
     constructor(private http: HttpClient) { }
     getTodos()
     {
-        return this.http.get('https://jsonplaceholder.typicode.com/todos');
+        return this.http.get('http://localhost/mytodo_app/api/public/todos/');
     }
     getTodos(id)
     {
-        return this.http.get('https://jsonplaceholder.typicode.com/todos'+id);
+        return this.http.get('http://localhost/mytodo_app/api/public/todos/'+id);
     }
 }
